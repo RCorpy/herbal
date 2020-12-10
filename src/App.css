@@ -3,7 +3,7 @@ body {
   height: 100%;
 }
 .App {
-  color: black;
+  color: white;
 }
 .NavbarClass {
   background: blue;
@@ -14,7 +14,6 @@ body {
   margin-left: 120px;
   display: flex;
   flex-direction: row;
-  background: red;
   align-items: center;
 }
 
@@ -22,7 +21,6 @@ body {
   display: flex;
   flex-direction: row;
   align-content: right;
-  background: green;
   margin-left: auto;
   margin-right: 100px;
 }
@@ -51,17 +49,49 @@ body {
   align-items: center;
 }
 
-.w-100{
+.w-100 {
   height: 500px;
 }
-.browseProducts{
+.browseProducts {
   text-align: center;
   margin: 15px;
   font-size: 30px;
 }
 
-.productListContainer{
+.productListContainer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.cardContainer {
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  padding: 14px 20px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.cardContainer:hover {
+  transform: scale(1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.targetCard {
+  color: grey;
+  font-size: 0.8em;
+}
+.nameCard {
+  color: black;
+  font-size: 0.8em;
+}
+.priceCard {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
 }
